@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Indeed :Welcomes You!</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(207, 166, 239);
+        }
+        .btn-admin {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-fuel-station {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .btn-user {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-delivery-person {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+        .container-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .highlighted-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Optional: Uncomment the following line to add a background image */
+            /* background-image: url('path-to-your-image.jpg'); */
+            /* background-size: cover; */
+            /* background-position: center; */
+        }
+        .btn {
+            font-size: 1.25rem; /* Increase font size */
+            padding: 1rem; /* Increase padding */
+            color: white;
+        }
+        .d-grid .btn {
+            margin-bottom: 1rem; /* Increase gap between buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="container container-center">
+        <div class="row justify-content-center highlighted-container">
+            <div class="col-md-12">
+                <h2 class="text-center mb-4">Login Options</h2>
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-admin btn-block" onclick="location.href='adminlogin.html'">Login as Admin</button>
+                    <button type="button" class="btn btn-fuel-station btn-block" onclick="location.href='fuelstationlogin.html'">Login as Fuel Station</button>
+                    <button type="button" class="btn btn-user btn-block" onclick="location.href='userlogin.html'">Login as User</button>
+                    <button type="button" class="btn btn-delivery-person btn-block" onclick="location.href='deliverypersonlogin.html'">Login as Delivery Person</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
